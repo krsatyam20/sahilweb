@@ -1,0 +1,41 @@
+basic concept :
+  tag:
+	single
+		only closing tag	
+			ex: </br>
+				<img />
+	pair 
+	   open tag and close tag	
+	   <>(open tag)
+	   </>(close tag)
+	   ex: 
+		<p>  </p>
+	   <div>  </div>
+	   
+element:A complete tag is called element.
+
+attributes: any tag char. is called attributes
+			width
+			height
+			color
+			
+			<body width="" height="">
+Extension :.html/.htm/.htms/.xhtml
+				seo(search engine optimization) 
+	   index.html
+	   home.html
+	   welcome.html
+	   default.html
+	   
+xyz.com/
+
+tools
+ notepad
+ chrome
+
+mesarment 
+	px
+	%
+Division 
+		table
+		Div
