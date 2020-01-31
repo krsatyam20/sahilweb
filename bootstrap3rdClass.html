@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<style>
+img{width:150px;height:150px}
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body, div, span, h1, h2, h3, p, a, form, nav, li, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+ul {
+	list-style-type: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.monthname {
+  width: 18em;
+}
+.pointer {
+  cursor: pointer;
+}
+body {
+  font-family: 'Lato',sans-serif;
+  padding: 1em 0;
+}
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.calendar p {
+	margin-bottom: .5em;
+	color: #d09015;
+}
+.calendar {
+	background: #222;
+	color: #ddd;
+	padding: .5em .5em 1em;
+	max-width: 20em;
+	min-height: 15em;
+	margin: .5em auto;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.calendar li {
+	float: left;
+	width: -webkit-calc(100%/7);
+	text-align: center;
+	padding: .25em 0;
+	cursor: pointer;
+	border-bottom: 1px solid #444;
+}
+.calendar li:hover, .calendar li.red {
+	color: red;
+}
+.calendar li:nth-child(-n+7) {
+	color: #666;
+}
+.center {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6">
+
+<img src="image-250nw-452800699.jpg" class="img-rounded" />
+<img src="image-250nw-452800699.jpg" class="img-circle" />
+<img src="image-250nw-452800699.jpg" class="img-thumbnail" />
+
+</div>
+<div class="col-md-6">
+<h1 class="center">Select Dates</h1>
+<div class="calendar">
+  <div class="group">
+    <p class="left pointer minusmonth">&laquo;</p>
+    <p class="left monthname center pointer"></p>
+    <p class="right pointer addmonth">&raquo;</p>
+  </div>
+  <ul class="group">
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+    <li>Su</li>
+  </ul>
+</div>
+
+</div>
+<div class="col-md-6">
+<ul class = "nav nav-pills">
+   <li ><a href = "#">Home</a></li>
+   <li><a href = "#">SVN</a></li>
+   <li class = "active"><a href = "#">iOS</a></li>
+   <li><a href = "#">VB.Net</a></li>
+   <li><a href = "#">Java</a></li>
+   <li><a href = "#">PHP</a></li>
+</ul>
+<ul class = "nav nav-pills nav-stacked">
+   <li class = "active"><a href = "#">Home</a></li>
+   <li><a href = "#">SVN</a></li>
+   <li><a href = "#">iOS</a></li>
+   <li><a href = "#">VB.Net</a></li>
+   <li><a href = "#">Java</a></li>
+   <li><a href = "#">PHP</a></li>
+</ul>
+
+
+
+<ul class = "nav nav-pills nav-justified">
+   <li class = "active"><a href = "#">Home</a></li>
+   <li><a href = "#">SVN</a></li>
+   <li class = "disabled"><a href = "#">iOS</a></li>
+   <li><a href = "#">VB.Net</a></li>
+   <li><a href = "#">Java</a></li>
+   <li><a href = "#">PHP</a></li>
+</ul>
+
+</div>
+
+<div class="col-md-6">
+<ul class = "nav nav-tabs">
+   <li class = "active"><a href = "#">Home</a></li>
+   <li><a href = "#">SVN</a></li>
+   <li><a href = "#">iOS</a></li>
+   <li><a href = "#">VB.Net</a></li>
+   
+   <li class = "dropdown">
+      <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#">
+         Java 
+         <span class = "caret"></span>
+      </a>  <ul class = "dropdown-menu">
+         <li><a href = "#">Swing</a></li>
+         <li><a href = "#">jMeter</a></li>
+		 <li class = "divider"></li>
+         <li><a href = "#">EJB</a></li>
+         <li class = "divider"></li>
+         <li><a href = "#">Separated link</a></li>
+      </ul>      
+   </li>
+<li>
+
+
+
+   
+      <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#">
+         PHP 
+         <span class = "caret"></span>
+      </a>  <ul class = "dropdown-menu">
+         <li><a href = "#">Swing</a></li>
+         <li><a href = "#">jMeter</a></li>
+		 <li class = "divider"></li>
+         <li><a href = "#">EJB</a></li>
+         <li class = "divider"></li>
+         <li><a href = "#">Separated link</a></li>
+      </ul>      
+   
+</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+<script>
+var themonth = 1;
+renderCal(themonth);
+
+$('.minusmonth').click(function(){
+  themonth += -1;
+  renderCal(themonth);
+});
+
+$('.addmonth').click(function(){
+  themonth += 1;
+  renderCal(themonth);
+});
+
+function renderCal(themonth){
+$('.calendar li').remove();
+$('.calendar ul').append('<li>Mo</li><li>Tu</li><li>We</li><li>Th</li><li>Fr</li><li>Sa</li> <li>Su</li>');
+var d = new Date(),
+  currentMonth = d.getMonth()+themonth, // get this month
+  days = numDays(currentMonth,d.getYear()), // get number of days in the month
+  fDay = firstDay(currentMonth,d.getYear())-1, // find what day of the week the 1st lands on
+  months = ['January','February','March','April','May','June','July','August','September','October','November','December']; // month names
+
+$('.calendar p.monthname').text(months[currentMonth-1]); // add month name to calendar
+
+for (var i=0;i<fDay-1;i++) { // place the first day of the month in the correct position
+  $('<li>&nbsp;</li>').appendTo('.calendar ul');
+}
+
+for (var i = 1;i<=days;i++) { // write out the days
+  $('<li>'+i+'</li>').appendTo('.calendar ul');
+}
+
+function firstDay(month,year) {
+  return new Date(year,month,1).getDay();
+}
+
+function numDays(month,year) {
+  return new Date(year,month,0).getDate();
+}
+
+var clicker = 0;
+var min = 0;
+var max = 0;
+
+$('.calendar li').click(function(){ // toggle selected dates
+  if(clicker==0){
+    clicker=1;
+    $('.calendar li').removeClass('red');
+    $(this).addClass('red');
+    min = $(this).text();
+  } else {
+    clicker=0;
+    $(this).addClass('red');
+    $('.calendar li.red').each(function(){
+      max = $(this).text();
+    });
+    for(i=parseInt(min);i<parseInt(max);i++){
+      $('.calendar li:nth-of-type('+(i+7+fDay-1)+')').addClass('red'); 
+    }
+  }
+});
+}
+</script>
+
+</body>
+</html>
