@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>
+/* function 
+		system define (alert/console.log)
+		user define
+		    =>no argument no return
+		    =>no argument with return
+		    =>with argument no return
+		    =>with argument with return
+
+*/
+//=>no argument no return
+
+//define a function 
+function functionName(){
+
+console.log("no argument no return");
+
+}
+
+//call/Use a function
+functionName();
+
+
+//=>with argument with return
+
+function add(x,y){ // here x and y is two arguments
+
+var z=x+y;
+return z;  //z is a return value 
+
+}
+
+//console.log(res);
+
+</script>
+</head>
+<body>
+
+<input type="text" id="resValue" />
+
+</body>
+<script>
+var res=add(10,20);
+
+document.getElementById("resValue").value=res;
+
+
+</script>
+</html>
